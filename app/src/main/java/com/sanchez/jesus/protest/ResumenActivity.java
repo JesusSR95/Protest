@@ -1,29 +1,16 @@
 package com.sanchez.jesus.protest;
 
-import android.content.Intent;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-
-public class InicioActivity extends AppCompatActivity {
-    private static final String TAG="InicioActivity";
-    private static int  TIEMPO = 4000;
+public class ResumenActivity extends AppCompatActivity {
+    private static final String TAG="activity_splash_screen";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Mylog.d(TAG, "Iniciando OnCreate");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inicio);
-        getSupportActionBar().hide();
-
-        new Handler().postDelayed(new Runnable(){
-            public void run(){
-                Intent it = new Intent(InicioActivity.this, resumenActivity.class);
-                startActivity(it);
-                finish();
-            }
-        },TIEMPO);
+        setContentView(R.layout.activity_resumen);
         Mylog.d(TAG, "Finalizando OnCreate");
     }
 
