@@ -3,4 +3,7 @@
     <string name="app_name">ProTest</string>
     <string name="title_name">Pro Test</string>
     <string name="logo">Logo</string>
+    <string name="action_settings">About Us</string>
+    <string name="action_buscar">Search</string>
+    <string name="action_nuevo">New</string>
 </resources>

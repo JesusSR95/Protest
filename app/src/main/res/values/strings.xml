@@ -2,4 +2,8 @@
     <string name="app_name">ProTest</string>
     <string name="title_name">Pro Test</string>
     <string name="logo">Logo</string>
+    <string name="action_settings">Acerca de</string>
+    <string name="action_buscar">Buscar</string>
+    <string name="action_nuevo">Nuevo</string>
+    <string name="title_activity_acerca">AcercaActivity</string>
 </resources>
