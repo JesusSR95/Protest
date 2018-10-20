@@ -5,5 +5,11 @@
     <string name="action_settings">Acerca de</string>
     <string name="action_buscar">Buscar</string>
     <string name="action_nuevo">Nuevo</string>
-    <string name="title_activity_acerca">AcercaActivity</string>
+    <string name="title_activity_acerca">Acerca de</string>
+    <string name="acerca_nombre">Nombre:</string>
+    <string name="acerca_nomyape" translatable="false">Jesús Sánchez Ruiz</string>
+    <string name="acerca_telefono">Telefono:</string>
+    <string name="acerca_numero" translatable="false">637153377</string>
+    <string name="acerca_email">E-mail:</string>
+    <string name="acerca_correo" translatable="false">js_ruiz@icloud.com</string>
 </resources>

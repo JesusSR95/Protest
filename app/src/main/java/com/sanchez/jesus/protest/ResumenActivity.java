@@ -42,6 +42,7 @@ public class ResumenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resumen);
         Mylog.d(TAG, "Finalizando OnCreate");
+
     }
 
     @Override

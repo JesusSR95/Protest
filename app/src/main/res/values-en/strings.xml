@@ -6,4 +6,8 @@
     <string name="action_settings">About Us</string>
     <string name="action_buscar">Search</string>
     <string name="action_nuevo">New</string>
+    <string name="title_activity_acerca">About Us</string>
+    <string name="acerca_nombre">Name:</string>
+    <string name="acerca_telefono">Phone:</string>
+    <string name="acerca_email">E-mail:</string>
 </resources>
