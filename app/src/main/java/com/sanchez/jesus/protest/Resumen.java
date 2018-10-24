@@ -19,16 +19,21 @@ public class ResumenActivity extends AppCompatActivity {
 
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.action_nuevo:
-                Log.i("ActionBar", "Nuevo!");
-                return true;
             case R.id.action_buscar:
-                Log.i("ActionBar", "Buscar!");;
+                Log.i("ActionBar", "Buscar");;
                 return true;
             case R.id.action_settings:
-                Log.i("ActionBar", "Settings!");
-                Intent it = new Intent(ResumenActivity.this, AcercaActivity.class);
-                startActivity(it);
+                Log.i("ActionBar", "Opciones");
+                return true;
+            case R.id.action_preguntas:
+                Log.i("ActionBar", "Preguntas");
+                Intent intent = new Intent(ResumenActivity.this, ListadoActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.action_acerca:
+                Log.i("ActionBar", "AcercaDe");
+                Intent intent2 = new Intent(ResumenActivity.this, AcercaActivity.class);
+                startActivity(intent2);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
