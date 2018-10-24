@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class ResumenActivity extends AppCompatActivity {
+public class Resumen extends AppCompatActivity {
     private static final String TAG="activity_splash_screen";
 
     @Override
@@ -27,12 +27,12 @@ public class ResumenActivity extends AppCompatActivity {
                 return true;
             case R.id.action_preguntas:
                 Log.i("ActionBar", "Preguntas");
-                Intent intent = new Intent(ResumenActivity.this, ListadoActivity.class);
+                Intent intent = new Intent(Resumen.this, Listado.class);
                 startActivity(intent);
                 return true;
             case R.id.action_acerca:
                 Log.i("ActionBar", "AcercaDe");
-                Intent intent2 = new Intent(ResumenActivity.this, AcercaActivity.class);
+                Intent intent2 = new Intent(Resumen.this, AcercaDe.class);
                 startActivity(intent2);
                 return true;
             default:
