@@ -27,4 +27,6 @@
     <string name="anadir_res_incorrecta2">Respuesta incorrecta</string>
     <string name="anadir_res_incorrecta3">Respuesta incorrecta</string>
     <string name="anadir_boton">Aceptar</string>
+    <string name="write_permiso_denegado">Permiso denegado</string>
+    <string name="write_permiso_aceptado">Permiso aceptado</string>
 </resources>
