@@ -27,4 +27,5 @@
     <string name="anadir_boton">Acept</string>
     <string name="write_permiso_denegado">Permission denied</string>
     <string name="write_permiso_aceptado">Permission grante</string>
+    <string name="categoria">Category</string>
 </resources>

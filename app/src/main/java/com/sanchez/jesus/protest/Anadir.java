@@ -26,6 +26,7 @@ public class Anadir extends AppCompatActivity {
     private Context myContext;
     private CoordinatorLayout coordinatorLayout;
     EditText edtext1, edtext2, edtext3,  edtext4, edtext5;
+    Spinner spinner1;
     Button bt;
 
 
@@ -42,6 +43,7 @@ public class Anadir extends AppCompatActivity {
         bt = (Button) findViewById(R.id.botonAceptar);
         edtext1 = (EditText) findViewById(R.id.PreguntaeditText);
         edtext2 = (EditText) findViewById(R.id.respuestaCorrecta);
+        spinner1 = (Spinner) findViewById(R.id.spinner);
         edtext3 = (EditText) findViewById(R.id.respuestaIncorrecta1);
         edtext4 = (EditText) findViewById(R.id.respuestaIncorrecta2);
         edtext5 = (EditText) findViewById(R.id.respuestaIncorrecta3);
@@ -70,6 +72,7 @@ public class Anadir extends AppCompatActivity {
                             .setAction("Action", null).show();
                 }
                 else{
+
                     myContext = Anadir.this;
                     coordinatorLayout = findViewById(R.id.coordinatorLayout);
                     bt.setOnClickListener(new View.OnClickListener() {
@@ -97,6 +100,13 @@ public class Anadir extends AppCompatActivity {
 
                         }
                     });
+
+                    //AQUI VA LO DE INSERTAR
+                    Pregunta pregunta = new Pregunta(edtext1.getText().toString(), spinner1.getSelectedItem().toString() , edtext2.getText().toString(), edtext3.getText().toString(), edtext4.getText().toString(), edtext5.getText().toString());
+
+                    Repositorio.insertar(myContext, pregunta);
+
+                    finish();
                 }
 
             }
